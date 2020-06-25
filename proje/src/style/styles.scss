@@ -1,0 +1,79 @@
+/*Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+@import "header";
+@import "cards";
+@import "footer";
+
+/* media query*/
+
+@media(max-width:1300px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media(max-width:1000px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media(max-width:660px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .burger{
+        position: relative;
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger span {
+        padding: 0.2rem 2rem;
+        margin: 0.5rem 0rem;
+        background: #5f5f79;
+        display:block;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #24252A;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        width: 50%;      
+        z-index:2;
+
+        &_link{
+            color: #fff;
+        }
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+        transition: transform 0.5s;
+    }
+
+    .cart{
+        display: none;
+    }
+
+}

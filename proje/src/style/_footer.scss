@@ -1,0 +1,35 @@
+.footer{
+    background-color: black;
+    height:50vh;
+    margin-top:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_info{
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    &_copyright{
+        color:#fff;
+        margin-top: 100px;
+    }
+  
+}
+
+.footer_liste{
+    color: #fff;
+    padding:30px;
+    border-right: 2px solid orange;
+
+    ul{
+        list-style: none;
+    }
+}
+
+.footer_liste:last-child{
+    border-right: none;
+}

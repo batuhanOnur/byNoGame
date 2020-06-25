@@ -1,0 +1,50 @@
+/* header */
+header {
+    display:flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid #5f5f79;
+}
+
+nav {
+    flex:2;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+    display: flex;
+}
+
+.logo-container {
+    flex:1;
+}
+
+.logo {
+    font-weight: 400;
+    margin: 5px;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+
+    &_link{
+        color: #5f5f79;
+        font-size: 18px;
+        text-decoration: none;
+    }
+}
+
+.cart {
+    flex:1;
+    justify-content: flex-end;
+}
+
+.burger{
+    display:none;
+ 
+}
+
